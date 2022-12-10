@@ -1,5 +1,5 @@
 class Singleton {
-  render(data){
+  output(data){
     console.log(data)
   }
 }
