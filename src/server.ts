@@ -1,19 +1,12 @@
-import express from 'express'
-// require('dotenv').config()
-import "dotenv/config"
+import "dotenv/config";
 
-const app = express()
+import app from "./app";
 
-const port = process.env.PORT
+const port = process.env.PORT;
 
-app.get("/", (request, response) => {
-    response.json('Hola a todos')
-})
 app.listen(port, () => {
-    console.log('server running at port '+ port)
-})
-
-export default app
+    console.log(`[server]: Server is running at http://localhost:${port}`);
+});
 
 // Create a database and Prisma model
 // In this exercise you'll build on what you created 
